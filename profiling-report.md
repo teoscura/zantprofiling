@@ -9,16 +9,13 @@ All tests were run on an Arch machne running a Ryzen 5 3600 and 16GB of DDR4 300
 All callgrind runs were done by running the command `valgrind --tool=callgrind --dump-instr=yes *bynary name*`.
 
 >Methods sorted by inclusion percentage:\
-
-[Callgrind - Inclusion Percentage](/screenshot-incl.png)
+![Callgrind - Inclusion Percentage](/screenshot-incl.png)
 
 >Methods sorted by self percentage:\
-
-[Callgrind - Self Percentage](/screenshot-inclself.png)
+![Callgrind - Self Percentage](/screenshot-inclself.png)
 
 >Methods sorted by number of calls:\
-
-[Callgrind - Calls](/screenshot-callsnum.png)
+![Callgrind - Calls](/screenshot-callsnum.png)
 
 Throughout the callgrind runs a function stood out as massive optimization targets: the ONNX convolution with bias functions, only two calls of it comprised ~35% of all the runtime of the application, it's a reasonable and expected result, as the convolution function is the main actor in calculating a prediction, it makes sense that the most performance demand arises from its calls.
 
@@ -31,8 +28,7 @@ All ten callgrind runs yielded the same results, plus/minus one or two memset ca
 All massif runs were done by running the command `valgrind --tool=massif --detail-freq=2 *binary name*`.
 
 >Massif-Visualizer Heap Space Graph:\
-
-[Massif-Visualizer Graph](/screenshot-heapgraph.png)
+![Massif-Visualizer Graph](/screenshot-heapgraph.png)
 
 All ten massif runs yielded the same exact graph, heap consumption peaks happen exactly during the two calls to the ONNX Convolution function mentioned beforehand, and result in a peak consumption of 233.4 KB.
 
