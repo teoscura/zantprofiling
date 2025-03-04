@@ -1,0 +1,1780 @@
+desc: --stacks=yes --detailed-freq=2 --massif-out-file=massif.out.1
+cmd: ./Z-Ant/zig-out/bin/Main
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1054864
+mem_heap_B=114056
+mem_heap_extra_B=112
+mem_stacks_B=30096
+heap_tree=detailed
+n1: 114056 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 114056 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 113888 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 113888 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 113888 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 113888 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 113888 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n5: 110752 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 78400 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 78400 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n1: 78400 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 78400 0x104247E: predict (static_lib.zig:156)
+            n1: 78400 0x10402D8: main.main (main.zig:46)
+             n1: 78400 0x103FD29: callMain (start.zig:514)
+              n1: 78400 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 78400 0x103FD29: main (start.zig:497)
+        n1: 25088 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n1: 25088 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 25088 0x104247E: predict (static_lib.zig:156)
+           n1: 25088 0x10402D8: main.main (main.zig:46)
+            n1: 25088 0x103FD29: callMain (start.zig:514)
+             n1: 25088 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 25088 0x103FD29: main (start.zig:497)
+        n1: 4096 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 4096 0x104247E: predict (static_lib.zig:156)
+          n1: 4096 0x10402D8: main.main (main.zig:46)
+           n1: 4096 0x103FD29: callMain (start.zig:514)
+            n1: 4096 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 4096 0x103FD29: main (start.zig:497)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 32 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 168 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=2958130
+mem_heap_B=114056
+mem_heap_extra_B=112
+mem_stacks_B=26016
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=3425146
+mem_heap_B=139992
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=4126826
+mem_heap_B=139992
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=5028986
+mem_heap_B=139992
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=5630426
+mem_heap_B=139992
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=6577694
+mem_heap_B=139992
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=7298824
+mem_heap_B=139976
+mem_heap_extra_B=144
+mem_stacks_B=26144
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=8200319
+mem_heap_B=139976
+mem_heap_extra_B=144
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 139976 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 139976 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 139776 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 139776 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 139776 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 139776 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 139776 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n6: 136640 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 78400 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 78400 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n1: 78400 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 78400 0x104247E: predict (static_lib.zig:156)
+            n1: 78400 0x10402D8: main.main (main.zig:46)
+             n1: 78400 0x103FD29: callMain (start.zig:514)
+              n1: 78400 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 78400 0x103FD29: main (start.zig:497)
+        n1: 25088 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n1: 25088 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 25088 0x104247E: predict (static_lib.zig:156)
+           n1: 25088 0x10402D8: main.main (main.zig:46)
+            n1: 25088 0x103FD29: callMain (start.zig:514)
+             n1: 25088 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 25088 0x103FD29: main (start.zig:497)
+        n1: 25088 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 25088 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n1: 25088 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 25088 0x104247E: predict (static_lib.zig:156)
+            n1: 25088 0x10402D8: main.main (main.zig:46)
+             n1: 25088 0x103FD29: callMain (start.zig:514)
+              n1: 25088 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 25088 0x103FD29: main (start.zig:497)
+        n1: 4096 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 4096 0x104247E: predict (static_lib.zig:156)
+          n1: 4096 0x10402D8: main.main (main.zig:46)
+           n1: 4096 0x103FD29: callMain (start.zig:514)
+            n1: 4096 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 4096 0x103FD29: main (start.zig:497)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 832 in 2 places, all below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 200 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=8741038
+mem_heap_B=139976
+mem_heap_extra_B=144
+mem_stacks_B=26160
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=9583022
+mem_heap_B=139976
+mem_heap_extra_B=144
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=10609719
+mem_heap_B=139976
+mem_heap_extra_B=144
+mem_stacks_B=26144
+heap_tree=detailed
+n1: 139976 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 139976 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 139776 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 139776 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 139776 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 139776 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 139776 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n6: 136640 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 78400 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 78400 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n1: 78400 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 78400 0x104247E: predict (static_lib.zig:156)
+            n1: 78400 0x10402D8: main.main (main.zig:46)
+             n1: 78400 0x103FD29: callMain (start.zig:514)
+              n1: 78400 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 78400 0x103FD29: main (start.zig:497)
+        n1: 25088 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n1: 25088 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 25088 0x104247E: predict (static_lib.zig:156)
+           n1: 25088 0x10402D8: main.main (main.zig:46)
+            n1: 25088 0x103FD29: callMain (start.zig:514)
+             n1: 25088 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 25088 0x103FD29: main (start.zig:497)
+        n1: 25088 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 25088 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n1: 25088 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 25088 0x104247E: predict (static_lib.zig:156)
+            n1: 25088 0x10402D8: main.main (main.zig:46)
+             n1: 25088 0x103FD29: callMain (start.zig:514)
+              n1: 25088 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 25088 0x103FD29: main (start.zig:497)
+        n1: 4096 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 4096 0x104247E: predict (static_lib.zig:156)
+          n1: 4096 0x10402D8: main.main (main.zig:46)
+           n1: 4096 0x103FD29: callMain (start.zig:514)
+            n1: 4096 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 4096 0x103FD29: main (start.zig:497)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 832 in 2 places, all below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 200 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=11757178
+mem_heap_B=139976
+mem_heap_extra_B=144
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=12797395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=13429395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=14061395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=14693395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=15325395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=15957395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=16589395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=17221395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=17853395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=18485395
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=19059387
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=detailed
+n1: 6352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 6352 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 6272 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 6272 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 6272 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 6272 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 6272 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+       n2: 3136 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 80 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=20445808
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19704
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=21470250
+mem_heap_B=16752
+mem_heap_extra_B=56
+mem_stacks_B=22128
+heap_tree=detailed
+n1: 16752 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 16752 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 16640 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 16640 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 16640 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 16640 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 16640 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n3: 13504 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 0 in 5 places, all below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 112 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=27
+#-----------
+time=22138068
+mem_heap_B=186216
+mem_heap_extra_B=112
+mem_stacks_B=30096
+heap_tree=detailed
+n1: 186216 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 186216 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 186048 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 186048 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 186048 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 186048 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 186048 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n5: 182912 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 3 places, all below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 168 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=25771132
+mem_heap_B=186216
+mem_heap_extra_B=112
+mem_stacks_B=26016
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=26322462
+mem_heap_B=199032
+mem_heap_extra_B=128
+mem_stacks_B=26144
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=26982076
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=27392
+heap_tree=peak
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=27532733
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=28161925
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=28791117
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=29806764
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=30429166
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=36
+#-----------
+time=31051568
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=31673970
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=32296372
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=32918774
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=33541176
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=34163578
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=34785980
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=35408382
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=36238245
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=45
+#-----------
+time=36860647
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=37483049
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=38105451
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=38727853
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=39557767
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=40024811
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=40491855
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=40958899
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=41425943
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211608 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 216 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=41892987
+mem_heap_B=211608
+mem_heap_extra_B=152
+mem_stacks_B=26008
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=42360030
+mem_heap_B=211592
+mem_heap_extra_B=144
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211592 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 200 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=42827050
+mem_heap_B=211592
+mem_heap_extra_B=144
+mem_stacks_B=26144
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=43294474
+mem_heap_B=211592
+mem_heap_extra_B=144
+mem_stacks_B=26144
+heap_tree=detailed
+n1: 211592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211592 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 200 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=43761499
+mem_heap_B=211592
+mem_heap_extra_B=144
+mem_stacks_B=26016
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=44228517
+mem_heap_B=211592
+mem_heap_extra_B=144
+mem_stacks_B=26008
+heap_tree=detailed
+n1: 211592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 211592 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 211392 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 211392 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 211392 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 211392 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 211392 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n7: 208256 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 156800 0x105640D: Core.Tensor.TensorMath.op_convolution.im2col__anon_4631 (op_convolution.zig:411)
+         n1: 156800 0x1058DD0: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:268)
+          n2: 156800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 156800 0x104711D: predict (static_lib.zig:199)
+            n1: 156800 0x10402D8: main.main (main.zig:46)
+             n1: 156800 0x103FD29: callMain (start.zig:514)
+              n1: 156800 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 156800 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12800 0x10590D3: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:282)
+         n2: 12800 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12800 0x104711D: predict (static_lib.zig:199)
+           n1: 12800 0x10402D8: main.main (main.zig:46)
+            n1: 12800 0x103FD29: callMain (start.zig:514)
+             n1: 12800 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12800 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1058BA6: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:255)
+         n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+          n1: 12544 0x104711D: predict (static_lib.zig:199)
+           n1: 12544 0x10402D8: main.main (main.zig:46)
+            n1: 12544 0x103FD29: callMain (start.zig:514)
+             n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+              n0: 12544 0x103FD29: main (start.zig:497)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 12544 0x1059D5D: mat_mul (op_mat_mul.zig:77)
+         n1: 12544 0x1059D5D: Core.Tensor.TensorMath.op_convolution.convolve_tensor_with_bias__anon_4630 (op_convolution.zig:299)
+          n2: 12544 0x105D20C: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:187)
+           n1: 12544 0x104711D: predict (static_lib.zig:199)
+            n1: 12544 0x10402D8: main.main (main.zig:46)
+             n1: 12544 0x103FD29: callMain (start.zig:514)
+              n1: 12544 0x103FD29: callMainWithArgs (start.zig:482)
+               n0: 12544 0x103FD29: main (start.zig:497)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+        n2: 10368 0x105C911: Core.Tensor.TensorMath.op_convolution.OnnxConvLean__anon_4627 (op_convolution.zig:143)
+         n1: 10368 0x104711D: predict (static_lib.zig:199)
+          n1: 10368 0x10402D8: main.main (main.zig:46)
+           n1: 10368 0x103FD29: callMain (start.zig:514)
+            n1: 10368 0x103FD29: callMainWithArgs (start.zig:482)
+             n0: 10368 0x103FD29: main (start.zig:497)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 64 in 1 place, below massif's threshold (1.00%)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+  n0: 200 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=44695557
+mem_heap_B=211592
+mem_heap_extra_B=144
+mem_stacks_B=26160
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=45162763
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=detailed
+n1: 6352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 6352 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 6272 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 6272 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 6272 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 6272 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 6272 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+       n2: 3136 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 80 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=45629796
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19816
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=46096852
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19824
+heap_tree=detailed
+n1: 6352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 6352 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 6272 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 6272 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 6272 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 6272 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 6272 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+       n2: 3136 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 80 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=64
+#-----------
+time=46563918
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19824
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=47031073
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19824
+heap_tree=detailed
+n1: 6352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 6352 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 6272 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 6272 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 6272 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 6272 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 6272 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+       n2: 3136 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 80 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=47498763
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19672
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=47965796
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19816
+heap_tree=detailed
+n1: 6352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 6352 0x1092682: heap.rawCAlloc (heap.zig:188)
+  n1: 6272 0x10A29EC: rawAlloc (Allocator.zig:86)
+   n1: 6272 0x10A29EC: mem.Allocator.allocBytesWithAlignment__anon_9361 (Allocator.zig:225)
+    n1: 6272 0x10927BA: mem.Allocator.allocWithSizeAndAlignment__anon_8837 (Allocator.zig:211)
+     n1: 6272 0x1054408: allocAdvancedWithRetAddr (Allocator.zig:205)
+      n2: 6272 0x1054408: mem.Allocator.alloc__anon_4298 (Allocator.zig:129)
+       n1: 3136 0x1041AD9: predict (static_lib.zig:125)
+        n1: 3136 0x10402D8: main.main (main.zig:46)
+         n1: 3136 0x103FD29: callMain (start.zig:514)
+          n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+           n0: 3136 0x103FD29: main (start.zig:497)
+       n2: 3136 0x10541FE: Core.Tensor.tensor.Tensor(f32).fromShape (tensor.zig:127)
+        n1: 3136 0x1041D91: predict (static_lib.zig:133)
+         n1: 3136 0x10402D8: main.main (main.zig:46)
+          n1: 3136 0x103FD29: callMain (start.zig:514)
+           n1: 3136 0x103FD29: callMainWithArgs (start.zig:482)
+            n0: 3136 0x103FD29: main (start.zig:497)
+        n0: 0 in 6 places, all below massif's threshold (1.00%)
+  n0: 80 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=68
+#-----------
+time=48755193
+mem_heap_B=6352
+mem_heap_extra_B=40
+mem_stacks_B=19704
+heap_tree=empty
